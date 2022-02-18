@@ -16,6 +16,8 @@
 		0EEC793227BCFBE100248D5F /* Chpater06_SQLite3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC793127BCFBE100248D5F /* Chpater06_SQLite3Tests.swift */; };
 		0EEC793C27BCFBE100248D5F /* Chpater06_SQLite3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC793B27BCFBE100248D5F /* Chpater06_SQLite3UITests.swift */; };
 		0EEC793E27BCFBE100248D5F /* Chpater06_SQLite3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC793D27BCFBE100248D5F /* Chpater06_SQLite3UITestsLaunchTests.swift */; };
+		0EEC794C27BCFDD200248D5F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEC794B27BCFDD200248D5F /* libsqlite3.tbd */; };
+		0EEC798B27BE00BD00248D5F /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC798A27BE00BD00248D5F /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		0EEC793727BCFBE100248D5F /* Chpater06-SQLite3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chpater06-SQLite3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEC793B27BCFBE100248D5F /* Chpater06_SQLite3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chpater06_SQLite3UITests.swift; sourceTree = "<group>"; };
 		0EEC793D27BCFBE100248D5F /* Chpater06_SQLite3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chpater06_SQLite3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EEC794B27BCFDD200248D5F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EEC794D27BCFE8A00248D5F /* Chapter06-SQLite3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chapter06-SQLite3-Bridging-Header.h"; sourceTree = "<group>"; };
+		0EEC798A27BE00BD00248D5F /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEC794C27BCFDD200248D5F /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +85,12 @@
 		0EEC790E27BCFBE000248D5F = {
 			isa = PBXGroup;
 			children = (
+				0EEC794D27BCFE8A00248D5F /* Chapter06-SQLite3-Bridging-Header.h */,
 				0EEC791927BCFBE000248D5F /* Chpater06-SQLite3 */,
 				0EEC793027BCFBE100248D5F /* Chpater06-SQLite3Tests */,
 				0EEC793A27BCFBE100248D5F /* Chpater06-SQLite3UITests */,
 				0EEC791827BCFBE000248D5F /* Products */,
+				0EEC794A27BCFDD200248D5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +114,7 @@
 				0EEC792327BCFBE100248D5F /* Assets.xcassets */,
 				0EEC792527BCFBE100248D5F /* LaunchScreen.storyboard */,
 				0EEC792827BCFBE100248D5F /* Info.plist */,
+				0EEC798A27BE00BD00248D5F /* db.sqlite */,
 			);
 			path = "Chpater06-SQLite3";
 			sourceTree = "<group>";
@@ -125,6 +134,14 @@
 				0EEC793D27BCFBE100248D5F /* Chpater06_SQLite3UITestsLaunchTests.swift */,
 			);
 			path = "Chpater06-SQLite3UITests";
+			sourceTree = "<group>";
+		};
+		0EEC794A27BCFDD200248D5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC794B27BCFDD200248D5F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 				0EEC792727BCFBE100248D5F /* LaunchScreen.storyboard in Resources */,
 				0EEC792427BCFBE100248D5F /* Assets.xcassets in Resources */,
 				0EEC792227BCFBE000248D5F /* Main.storyboard in Resources */,
+				0EEC798B27BE00BD00248D5F /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "himchan.Chpater06-SQLite3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-SQLite3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,6 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "himchan.Chpater06-SQLite3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-SQLite3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
